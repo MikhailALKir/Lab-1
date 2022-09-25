@@ -18,7 +18,7 @@ for index, row in enumerate(table):
     total_count += 1
 
 print("Кол-во книг: ", total_count)
-print("Кол-во книг <30 символов: ", short_title_count)
+print("Кол-во книг  меньше 30 символов: ", short_title_count)
 
 search_author = input('Введите автора: ').lower()
 
@@ -45,7 +45,6 @@ for index, row in enumerate(table):
 
     if random() < 0.5 and output_count < 20:
         output_count += 1
-        # <автор>. <название> - <год>
         print(f"#{index} {row[4]}. {row[1]} - {row[6]}", file = output)
 
 output.close()
