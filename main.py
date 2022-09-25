@@ -18,7 +18,7 @@ for index, row in enumerate(table):
     total_count += 1
 
 print("Кол-во книг: ", total_count)
-print("Кол-во книг больше 30 символов: ", short_title_count)
+print("Кол-во книг < 30 символов: ", short_title_count)
 
 search_author = input('Введите автора: ').lower()
 
