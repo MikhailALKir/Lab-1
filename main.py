@@ -35,7 +35,8 @@ for index, row in enumerate(table):
     author = row[3]
 
     if author.lower() == search_author:
-        print(row[4], "-", row[1], "-", row[6])
+
+        print(row[4], "-", row[1], "-", row[6][6:10])
 
 output = open("output.txt", "w")
 output_count = 0
@@ -45,7 +46,7 @@ for index, row in enumerate(table):
 
     if random() < 0.2 and output_count < 20:
         output_count += 1
-        print(f"#{index} {row[4]}. {row[1]} - {row[6]}", file = output)
+        print(f"#{index} {row[4]}. {row[1]} - {row[6][6:10]}", file = output)
 
 output.close()
 file.close()
